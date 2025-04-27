@@ -112,8 +112,8 @@ h1
 	padding: 2rem;
 	width: 100%;
 	max-width: 900px;
-	margin: 0 auto; /* This centers the container horizontally */
-	justify-content: center; /* This ensures the grid content is centered */
+	margin: 0 auto; 
+	justify-content: center; 
 }
 
 .choice-btn 
