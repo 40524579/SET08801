@@ -197,7 +197,7 @@ class GameEngine
 		this.choicesContainer = document.querySelector('.choices-container');
 		this.mainContent = document.querySelector('.story-content');
 	
-		// Initialize UI with loading state
+		// Initialise UI with loading state
 		this.setLoadingState(true);
 	}
   
@@ -434,8 +434,8 @@ class GameEngine
 			// Set background if available
 			if (currentNode.background) 
 			{
-				// If we were using real images, we'd set them here
-				// this.mainContent.style.backgroundImage = `url('images/${currentNode.background}')`;
+				// using images
+				this.mainContent.style.backgroundImage = `url('images/${currentNode.background}')`;
 			}
 		  
 			// Fade in the text
@@ -991,7 +991,8 @@ class GameEngine
 				'main_hall_stars': 'Main Hall Floor Pattern',
 				'decode_riddle': 'Quiet Reading Corner',
 				'follow_librarian': 'Ms. Blackwood\'s Path',
-				'follow_blackwood_secretly': 'Secret Passage'
+				'follow_blackwood_secretly': 'Secret Passage',
+				'close_door': 'Closed Door'
 			};
 
 			// Simple ASCII connections
@@ -1090,7 +1091,7 @@ class GameEngine
 		document.body.appendChild(mapOverlay);
 	}
 
-	// Initialize the game
+	// Initialise the game
 	initializeGame() 
 	{
 		// Add event listeners for remaining menu items
@@ -1115,7 +1116,7 @@ class GameEngine
 			document.getElementById('overlay').style.display = 'none';
 		});
 
-		// Initialize settings sliders
+		// Initialise settings sliders
 		const fontSizeSlider = document.getElementById('fontSize');
 		const fontSizeValue = document.getElementById('fontSizeValue');
 
