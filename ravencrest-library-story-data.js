@@ -7,7 +7,7 @@ const storyData = {
 			<p>Tonight is different. The library feels alive with secrets, and you've found something unusual - a small brass key hidden within the pages of an old manuscript. Perhaps it's nothing, but your curiosity compels you to investigate.</p>
 			<p>The choices you make tonight will unravel a mystery centuries in the making. Will you discover the librarian's secret, or become part of it?</p>
 			<p>Your journey begins now. Choose your path wisely.</p>`,
-		background: "library-main-hall.jpg",
+		background: "library-main-hall.png",
 		choices: [
 		  { id: "investigate_door", text: "[1] Investigate the locked door in the restricted section", next: "restricted_section" },
 		  { id: "examine_manuscript", text: "[2] Search the manuscript for more clues", next: "manuscript_clues" },
