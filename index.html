@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- To prevent cacheing in browsers -->
+		<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+
+		<title>The Librarian's Secret - A Digital Choose-Your-Path Mystery</title>
+		<link rel="stylesheet" type="text/css" href="ravencrest-library.css" />
+	</head>
+	<body>
+
+		<div class="container">
+		
+			<!-- Menu Items -->
+			<div class="side-menu" id="sideMenu">
+				<div class="menu-header">
+					<h2>Menu</h2>
+					<button class="close-menu" id="closeMenu">✕</button>
+				</div>
+				<ul class="menu-items">
+					<li><a href="#" id="newGame">New Game</a></li>
+					<li><a href="#" id="loadGame">Load Game</a></li>
+					<li><a href="#" id="saveGame">Save Game</a></li>
+					<li><a href="#" id="viewMap">View Map</a></li>
+					<li><a href="#" id="inventory">Inventory</a></li>
+					<li><a href="#" id="journal">Journal</a></li>
+					<li><a href="#" id="about">About</a></li>
+					<li><a href="#" id="help">Help</a></li>
+				</ul>
+			</div>
+
+			<div class="overlay" id="overlay"></div>
+		
+		
+			<header>
+				<h1>The Librarian's Secret</h1>
+			</header>
+			
+			<main class="story-content">
+				<div class="story-text">
+					<p>Welcome to Ravencrest Library, a place where books are merely the beginning of the mystery...</p>
+					<p>As a literature graduate now working the night shift, you couldn't have imagined the strange occurrences that await in these ancient halls. The flickering lights, the whispers between the shelves, and that peculiar locked door in the restricted section that no one seems to have a key for.</p>
+					<p>Tonight is different. The library feels alive with secrets, and you've found something unusual - a small brass key hidden within the pages of an old manuscript. Perhaps it's nothing, but your curiosity compels you to investigate.</p>
+					<p>The choices you make tonight will unravel a mystery centuries in the making. Will you discover the librarian's secret, or become part of it?</p>
+					<p>Your journey begins now. Choose your path wisely.</p>
+				</div>
+			</main>
+			
+			<div class="choices-container">
+				<button class="choice-btn" id="choice1">Investigate the locked door in the restricted section</button>
+				<button class="choice-btn" id="choice2">Search the manuscript for more clues</button>
+				<button class="choice-btn" id="choice3">Ask the senior librarian about the key</button>
+				<button class="choice-btn" id="choice4">Wait until morning and return the key</button>
+			</div>
+			
+			<footer>
+				<button class="nav-icon" id="menuButton">☰ Menu</button>
+				<button class="settings-icon" id="settingsButton">⚙ Settings</button>
+			</footer>
+			
+			
+			<!-- Settings Panel -->
+			<div class="settings-panel" id="settingsPanel">
+				<div class="settings-header">
+					<h2>Settings</h2>
+					<button class="close-settings" id="closeSettings">✕</button>
+				</div>
+				<div class="settings-content">
+					<div class="setting-group">
+						<h3>Display</h3>
+						<div class="setting-item">
+							<label for="fontSize">Font Size:</label>
+							<div class="range-container">
+								<input type="range" id="fontSize" min="80" max="120" value="100">
+								<span id="fontSizeValue">100%</span>
+							</div>
+						</div>
+						<div class="setting-item">
+							<label for="darkMode">Dark Mode:</label>
+							<label class="switch">
+								<input type="checkbox" id="darkMode">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+					<div class="setting-group">
+						<h3>Audio</h3>
+						<div class="setting-item">
+							<label for="musicVolume">Music Volume:</label>
+							<div class="range-container">
+								<input type="range" id="musicVolume" min="0" max="100" value="70">
+								<span id="musicVolumeValue">70%</span>
+							</div>
+						</div>
+						<div class="setting-item">
+							<label for="soundEffects">Sound Effects:</label>
+							<div class="range-container">
+								<input type="range" id="soundEffects" min="0" max="100" value="80">
+								<span id="soundEffectsValue">80%</span>
+							</div>
+						</div>
+						<div class="setting-item">
+							<label for="muteAll">Mute All:</label>
+							<label class="switch">
+								<input type="checkbox" id="muteAll">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+					<div class="setting-group">
+						<h3>Game</h3>
+						<div class="setting-item">
+							<label for="textSpeed">Text Speed:</label>
+							<div class="range-container">
+								<input type="range" id="textSpeed" min="1" max="5" value="3">
+								<span id="textSpeedValue">Normal</span>
+							</div>
+						</div>
+						<div class="setting-item">
+							<label for="autoSave">Auto Save:</label>
+							<label class="switch">
+								<input type="checkbox" id="autoSave" checked>
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+					<button class="settings-btn" id="resetSettings">Reset to Default</button>
+					<button class="settings-btn" id="applySettings">Apply Changes</button>
+				</div>
+			</div>
+			
+		</div>
+
+
+		<script type="text/javascript" src="ravencrest-library.js"></script>
+		<script type="text/javascript" src="ravencrest-library-story-data.js"></script>
+		<script type="text/javascript" src="ravencrest-library-game-engine.js"></script>
+		<script>	
+			// Initialise the game once the DOM is fully loaded
+			document.addEventListener('DOMContentLoaded', function() 
+			{
+				const game = new GameEngine();
+				game.initializeGame();
+			});
+		</script>
+	</body>
+</html>
