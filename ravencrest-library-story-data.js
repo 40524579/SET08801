@@ -20,11 +20,11 @@ const storyData = {
 	// Path 1: Investigate the door
 	"restricted_section": {
 		text: `<p>The restricted section is eerily quiet as you approach. Your footsteps echo against the marble floor despite your attempts to move silently.</p>
-			<p>The door stands before you—ancient oak with intricate carvings that seem to shift when viewed from different angles. A strange energy emanates from it, almost palpable in the dim light.</p>
+			<p>The door stands before you — ancient oak with intricate carvings that seem to shift when viewed from different angles. A strange energy emanates from it, almost palpable in the dim light.</p>
 			<p>The brass key feels warm in your palm as you raise it to the keyhole. It slides in with surprising ease, as if it belongs there.</p>
 			<p>A soft click breaks the silence as you turn the key. The door swings open, revealing a hidden staircase spiraling downward into darkness.</p>
-			<p>The air that escapes is cool and smells of ancient paper and something else—something older.</p>`,
-		background: "restricted-section.jpg",
+			<p>The air that escapes is cool and smells of ancient paper and something else — something older.</p>`,
+		background: "restricted-section.png",
 		choices: [
 		  { id: "descend_stairs", text: "[1.1] Descend the staircase", next: "hidden_archive" },
 		  { id: "get_flashlight", text: "[1.2] Go get a flashlight first", next: "get_flashlight" },
@@ -38,7 +38,7 @@ const storyData = {
 	// Path 2: Search the manuscript
 	"manuscript_clues": {
 		text: `<p>You return to your desk and carefully examine the manuscript in which you found the key. It appears to be a treatise on ancient libraries, written in an old but legible script.</p>
-			<p>As you turn the pages, you notice something peculiar—faint markings in the margins that form a pattern. Some look like stars or astronomical symbols. Others resemble fragments of a map.</p>
+			<p>As you turn the pages, you notice something peculiar — faint markings in the margins that form a pattern. Some look like stars or astronomical symbols. Others resemble fragments of a map.</p>
 			<p>On page 42, there's a detailed sketch of what appears to be Ravencrest Library's main hall, but with differences. A section of the floor is marked with an X, and there's a notation in tiny script: "Beneath the seventh star lies the path to wisdom's heart."</p>
 			<p>You recall the decorative stars embedded in the main hall's floor mosaic. Could this be referring to them?</p>
 			<p>There's also a loose page tucked into the binding—it contains what looks like a riddle or poem:</p>
@@ -46,7 +46,7 @@ const storyData = {
 			Seek the sentinel that never sleeps nor strays.<br>
 			Count seven steps from Apollo's gaze,<br>
 			To find the door to forgotten ways."</em></p>`,
-		background: "examining-manuscript.jpg",
+		background: "examining-manuscript.png",
 		choices: [
 		  { id: "check_floor", text: "[2.1] Investigate the star pattern on the main hall floor", next: "main_hall_stars" },
 		  { id: "decode_riddle", text: "[2.2] Try to decode the riddle", next: "decode_riddle" },
@@ -66,7 +66,7 @@ const storyData = {
 			<p>After you explain, she is quiet for a long moment, then looks at you with unexpected intensity.</p>
 			<p>"There are many secrets in this library," she says carefully. "Some are meant to be discovered, and others..." she pauses, "others are kept hidden for good reason. This key is very old—it belongs to a collection we thought was lost."</p>
 			<p>She hesitates, then seems to make a decision. "I believe you found this for a reason. The library sometimes...chooses people. If you're truly curious, there's something I should show you."</p>`,
-		background: "senior-librarian-office.jpg",
+		background: "senior-librarian-office.png",
 		choices: [
 		  { id: "follow_librarian", text: "[3.1] Follow Ms. Blackwood", next: "follow_librarian" },
 		  { id: "ask_more_questions", text: "[3.2] Ask more questions before deciding", next: "question_librarian" },
@@ -84,7 +84,7 @@ const storyData = {
 			<p>"You found something last night, didn't you?" she asks without preamble.</p>
 			<p>Startled by her directness, you admit to finding the key.</p>
 			<p>She nods as if confirming a suspicion. "I felt the change in the library. It's been waiting for someone like you—someone who can sense its secrets. If you're willing, come with me now. There's something you need to see while the threshold is still open."</p>`,
-		background: "library-morning.jpg",
+		background: "library-morning.png",
 		choices: [
 		  { id: "go_with_blackwood", text: "[4.1/3.1] Go with Ms. Blackwood", next: "follow_librarian" },
 		  { id: "show_the_key", text: "[4.2] Show her the key but delay going with her", next: "show_key_morning" },
@@ -102,7 +102,7 @@ const storyData = {
 			<p>The staircase opens into a vast chamber—an archive unlike anything you've seen before. Bookshelves stretch in all directions, filled with ancient tomes and scrolls. Many appear to predate the printing press.</p>
 			<p>In the center of the room stands a pedestal supporting a book that emanates the strange blue light. The book lies open, its pages moving slightly as if stirred by an unfelt breeze.</p>
 			<p>As you approach, you notice symbols on the pages that seem to rearrange themselves before your eyes.</p>`,
-		background: "hidden-archive.jpg",
+		background: "hidden-archive.png",
 		choices: [
 			{ id: "read_book", text: "[1.1.1] Try to read the glowing book", next: "read_ancient_book" },
 			{ id: "explore_archive", text: "[1.1.2] Explore the archive further", next: "explore_archive" },
@@ -119,7 +119,7 @@ const storyData = {
 			<p>In the supply closet, you find a heavy-duty flashlight and check that it works. As the beam cuts through the darkness, you notice something unusual on the back wall of the closet—a small symbol etched into the wood that matches one you saw on the manuscript.</p>
 			<p>As you lean closer to examine it, you hear footsteps approaching. Through the crack in the door, you see Ms. Blackwood, the senior librarian, walking purposefully toward the restricted section. She shouldn't be here this late.</p>
 			<p>Curiosity piqued, you have a decision to make.</p>`,
-		background: "maintenance-closet.jpg",
+		background: "maintenance-closet.png",
 		choices: [
 		  { id: "follow_blackwood", text: "[1.2.1] Follow Ms. Blackwood quietly", next: "follow_blackwood_secretly" },
 		  { id: "return_to_door", text: "[1.2.2] Return to the hidden door with your flashlight", next: "return_door_with_light" },
@@ -137,7 +137,7 @@ const storyData = {
 			<p>You decide to return to your regular duties, but the night feels different now. The shadows seem deeper, the silence more pointed. Books appear to shift slightly on the shelves when you're not looking directly at them.</p>
 			<p>Near midnight, you notice Ms. Blackwood, the senior librarian, entering the building. Unusual, as she rarely works this late. She moves purposefully toward the restricted section, unaware of your presence.</p>
 			<p>Her expression is one of concern, and you hear her mutter, "It's awakening. Someone must have found the key."</p>`,
-		background: "library-shadows.jpg",
+		background: "library-shadows.png",
 		choices: [
 		  { id: "follow_ms_blackwood", text: "[1.3.1] Follow Ms. Blackwood to the restricted section", next: "follow_blackwood_secretly" },
 		  { id: "approach_ms_blackwood", text: "[1.3.2] Approach Ms. Blackwood and show her the key", next: "approach_with_key" },
@@ -156,7 +156,7 @@ const storyData = {
 			<p>As you approach the seventh star—the one corresponding to Alkaid at the end of the Big Dipper's handle—you notice something unusual. The star seems to be set deeper than the others, and the surrounding marble is worn, as if many hands have touched this spot over centuries.</p>
 			<p>On impulse, you press down on the star. To your surprise, it gives slightly with a soft click. Suddenly, a section of the floor near the reference desk begins to shift, revealing a hidden staircase descending into darkness.</p>
 			<p>A cool draft rises from below, carrying the scent of old books and something else—something ancient and inexplicable.</p>`,
-		background: "main-hall-stars.jpg",
+		background: "main-hall-stars.png",
 		choices: [
 		  { id: "descend_main_stairs", text: "[2.1.1] Descend the hidden staircase", next: "accept_guardian_role" },	//	descend_main_hall_stairs
 		  { id: "check_surroundings", text: "[2.1.2] Check if anyone noticed the opening", next: "accept_guardian_role" },	//	check_for_witnesses
@@ -179,7 +179,7 @@ const storyData = {
 			<p>You make your way to the east wing. The grandfather clock continues its steady rhythm, the pendulum swinging hypnotically. The statue of Apollo stands nearby, exactly as you remembered.</p>
 			<p>Standing where Apollo's gaze seems directed, you count seven steps. You find yourself facing a bookshelf filled with ancient astronomical texts. Nothing seems unusual until you notice that one large tome doesn't quite match the others—its binding is slightly newer.</p>
 			<p>When you pull on the book, you hear a click, and a narrow door concealed within the bookshelf opens slightly.</p>`,
-		background: "apollo-statue.jpg",
+		background: "apollo-statue.png",
 		choices: [
 		  { id: "open_hidden_door", text: "[2.2.1] Open the hidden door and look inside", next: "accept_guardian_role" },	// 	apollo_hidden_passage
 		  { id: "examine_book", text: "[2.2.2] Examine the book that triggered the mechanism", next: "accept_guardian_role" },	//	examine_trigger_book
@@ -199,7 +199,7 @@ const storyData = {
 			<p>According to your research, this combination might represent "illumination through knowledge leading to transformation"—a concept central to many esoteric traditions.</p>
 			<p>As you ponder this, you realize the layout of the symbols on the manuscript page mirrors the floor plan of the library's west wing. Following this pattern leads you to the medieval history section, where a particular shelf seems to align with the final symbol in the sequence.</p>
 			<p>Examining the shelf closely, you discover a small metal plate bearing the same triangle symbol, hidden behind several dusty tomes on the Crusades.</p>`,
-		background: "research-symbols.jpg",
+		background: "research-symbols.png",
 		choices: [
 		  { id: "press_symbol", text: "[2.3.1] Press the metal triangle symbol", next: "accept_guardian_role" },	//	activate_symbol_plate
 		  { id: "continue_research", text: "[2.3.2] Continue researching the remaining symbols", next: "accept_guardian_role" },	//	deeper_symbol_research
@@ -219,7 +219,7 @@ const storyData = {
 			<p>She inserts her key into what appears to be a simple maintenance panel. It swings open to reveal a hidden elevator cabin lined with dark wood and brass fittings—clearly very old but immaculately maintained.</p>
 			<p>"This library serves as a repository for knowledge that some believe should remain hidden," she says as you both enter the elevator. "We are its custodians. We protect the world from dangerous knowledge, and protect valuable knowledge from a world that might destroy it."</p>
 			<p>The elevator descends smoothly, taking you deep below the library's foundations.</p>`,
-		background: "hidden-elevator.jpg",
+		background: "hidden-elevator.png",
 		choices: [
 		  { id: "ask_about_role", text: "[3.1.1] Ask about your role in all this", next: "accept_guardian_role" },	//	question_your_role
 		  { id: "ask_about_library", text: "[3.1.2] Ask about the library's true purpose", next: "accept_guardian_role" },	//	library_true_purpose
@@ -238,7 +238,7 @@ const storyData = {
 			<p>She opens the journal, showing you pages filled with elegant script and strange diagrams. "This is the journal of Elias Ravencrest himself. He designed the library to be both a public institution and a secure repository for texts of... unusual provenance."</p>
 			<p>"The key you found," she continues, "belongs to a set of seven, each opening different chambers where the most sensitive materials are kept. We thought the brass key was lost during renovations in the 1940s."</p>
 			<p>She looks at you intently. "As for the library choosing people—over generations, we've observed that certain individuals seem drawn to specific artifacts or areas of the collection. They find things that should be impossible to find. Like you found this key. We believe the library itself has a kind of... awareness. A purpose."</p>`,
-		background: "blackwood-office.jpg",
+		background: "blackwood-office.png",
 		choices: [
 		  { id: "agree_to_see", text: "[3.2.1] Agree to see what Ms. Blackwood wants to show you", next: "follow_librarian" },
 		  { id: "ask_about_society", text: "[3.2.2] Ask more about the scholarly society", next: "inquiry_scholarly_society" },
@@ -257,7 +257,7 @@ const storyData = {
 			<p>"If you change your mind, you know where to find me," she says. "But I should warn you—now that the library has taken notice of you, things may not return to how they were before. Knowledge, once glimpsed, is difficult to unsee."</p>
 			<p>You leave her office and return to your duties, trying to focus on ordinary tasks. Yet throughout your shift, unusual occurrences continue—books falling from shelves as you pass, whispers in empty rooms, and most disturbingly, the same page appearing in different books you open—always featuring an illustration of a brass key.</p>
 			<p>Near dawn, exhausted and unnerved, you find yourself back at the restricted section. The door you had found earlier stands slightly ajar, a warm light spilling from within. A voice—neither male nor female, neither young nor old—calls your name from beyond the threshold.</p>`,
-		background: "beckoning-doorway.jpg",
+		background: "beckoning-doorway.png",
 		choices: [
 		  { id: "reconsider_enter", text: "[3.3.1] Enter the doorway despite your earlier reluctance", next: "accept_guardian_role" },	//	reconsider_threshold
 		  { id: "find_blackwood", text: "[3.3.2] Go find Ms. Blackwood immediately", next: "accept_guardian_role" },	//	seek_blackwood_help
@@ -275,7 +275,7 @@ const storyData = {
 			<p>She returns the key to you, surprising you. "The key found you for a reason. Last night, at precisely 3:17 AM, our sensors detected an energy surge throughout the building. The threshold between the public library and the True Library thinned momentarily. Something is changing in the deeper reality of this place."</p>
 			<p>She glances at the grandfather clock in her office. "The threshold will remain permeable until noon. After that, it may be weeks or months before another opportunity arises."</p>
 			<p>She rises from her chair. "I understand your hesitation. But I should warn you that once the library has chosen someone, they rarely find peace until they've answered its call. The decision is yours, but know that time is limited."</p>`,
-		background: "morning-office.jpg",
+		background: "morning-office.png",
 		choices: [
 		  { id: "go_now", text: "[4.2.1] Decide to go with her now", next: "follow_librarian" },
 		  { id: "keep_key", text: "[4.2.2] Keep the key but delay the decision", next: "accept_guardian_role" },	//	delay_with_key
@@ -295,7 +295,7 @@ const storyData = {
 			<p>She closes the book. "I won't press you further. But know this: that key found you for a reason. The library doesn't make mistakes in its selections."</p>
 			<p>She hands you a small card with a symbol that matches one you noticed on the manuscript. "If you change your mind—or when the dreams begin—come find me. Day or night."</p>
 			<p>As you leave her office, the weight of the key in your pocket seems to grow heavier, as if demanding acknowledgment.</p>`,
-		background: "blackwood-knowing.jpg",
+		background: "blackwood-knowing.png",
 		choices: [
 		  { id: "admit_truth", text: "[4.3.1] Return and admit the truth", next: "accept_guardian_role" },	//	return_admit_finding
 		  { id: "investigate_alone", text: "[4.3.2] Investigate the key's purpose yourself", next: "accept_guardian_role" },	//	solo_key_research
@@ -316,7 +316,7 @@ const storyData = {
 			<p>According to the book, certain individuals—Librarians with a capital L—are chosen to guard these intersections and facilitate the exchange of knowledge between worlds.</p>
 			<p>As you continue reading, you sense a presence behind you. You turn to find an elderly woman watching you with keen eyes that seem to hold centuries of wisdom.</p>
 			<p>"I've been waiting for you," she says with a gentle smile. "Not everyone can read the Codex. It appears the library has chosen its next Guardian."</p>`,
-		background: "reading-ancient-book.jpg",
+		background: "reading-ancient-book.png",
 		choices: [
 			{ id: "accept_guardian", text: "[1.1.1.1] Ask about becoming a Guardian", next: "accept_guardian_role" },
 			{ id: "question_woman", text: "[1.1.1.2] Question who she is", next: "question_elder_librarian" },
@@ -336,7 +336,7 @@ const storyData = {
 			<p><em>"The boundaries grow thinner with each passing day. I fear we may need to select a new Guardian sooner than anticipated. There are signs that someone has been chosen, though they may not yet realize their connection to the library. I must prepare for the transition."</em></p>
 			<p>As you read these words, a soft cough behind you makes you turn. An elderly woman stands there, watching you with knowing eyes.</p>
 			<p>"I see you've found my journal," she says. "I am Eleanor Blackwood, though most know me simply as the senior librarian. But my true role here is far more significant."</p>`,
-		background: "archive-reading-area.jpg",
+		background: "archive-reading-area.png",
 		choices: [
 			{ id: "ask_about_guardian", text: "[1.1.2.1] Ask about the Guardian role", next: "guardian_explanation" },
 			{ id: "ask_about_journal", text: "[1.1.2.2] Ask about the journal entries", next: "journal_explanation" },
@@ -357,7 +357,7 @@ const storyData = {
 			<p>She gestures around at the vast archive. "The key you found was meant for you. It only works for those the library chooses."</p>
 			<p>She approaches slowly, her expression gentle but serious. "I understand your hesitation. The unknown can be frightening. But there are wonders here beyond imagination—and responsibilities that must be passed on."</p>
 			<p>"The choice remains yours," she continues. "You may leave now and return to your ordinary life, though the memory of this place will never leave you. Or you can stay and learn why you were chosen."</p>`,
-		background: "spiral-staircase.jpg",
+		background: "spiral-staircase.png",
 		choices: [
 			{ id: "change_mind_stay", text: "[1.1.3.1] Change your mind and stay to learn more", next: "decide_to_learn" },
 			{ id: "insist_leaving", text: "[1.1.3.2] Insist on leaving", next: "leave_archive" },
@@ -376,7 +376,7 @@ const storyData = {
 			<p>A soft blue glow emanates from below—the same color you glimpsed earlier. Quiet voices echo up the spiral stairs, Ms. Blackwood's among them, though you can't make out the words.</p>
 			<p>As you lean closer to listen, your flashlight slips from your pocket and clatters noisily down several steps. The voices immediately cease.</p>
 			<p>"We have a visitor," calls Ms. Blackwood's voice, calm but commanding. "Please join us. It's time you understood what's happening."</p>`,
-		background: "staircase-discovery.jpg",
+		background: "staircase-discovery.png",
 		choices: [
 		  { id: "join_meeting", text: "[1.2.1.1/1.3.1.1] Descend and join them", next: "join_secret_council" },
 		  { id: "apologize_retreat", text: "[1.2.1.2/1.3.1.2] Apologize and retreat", next: "apologetic_retreat" },
@@ -394,7 +394,7 @@ const storyData = {
 			<p>Your flashlight reveals an immense underground chamber filled with countless bookshelves, stretching farther than your light can reach. The air is cool but not stale—somehow fresh despite being underground.</p>
 			<p>In the center of the chamber stands a pedestal holding an open book that emits a soft blue glow. Even from a distance, you can see its pages seem to turn by themselves, rippling as if stirred by an invisible breeze.</p>
 			<p>As you move toward it, your flashlight flickers and then dies, but the book's blue radiance provides enough light to see by. Something about it draws you forward, as if it's been waiting for you.</p>`,
-		background: "archive-with-flashlight.jpg",
+		background: "archive-with-flashlight.png",
 		choices: [
 			{ id: "approach_glowing_book", text: "[1.2.2.1] Approach the glowing book", next: "approach_book_with_light" },
 			{ id: "explore_shelves", text: "[1.2.2.2] Explore the nearby shelves first", next: "explore_archive_shelves" },
@@ -414,7 +414,7 @@ const storyData = {
 			<p>"Planning an expedition?" she asks, her voice casual but her eyes intense.</p>
 			<p>You hesitate, unsure how much to reveal about your discovery. Before you can decide, she continues.</p>
 			<p>"I've worked in this library for forty years," she says softly. "I know all its secrets—including the door you found in the restricted section." She extends her hand. "Perhaps we should talk. There are things you need to understand about Ravencrest."</p>`,
-		background: "confronting-blackwood.jpg",
+		background: "confronting-blackwood.png",
 		choices: [
 			{ id: "admit_discovery", text: "[1.2.3.1] Admit what you found and ask for explanations", next: "admit_to_blackwood" },
 			{ id: "deny_everything", text: "[1.2.3.2] Deny finding anything unusual", next: "deny_to_blackwood" },
@@ -432,7 +432,7 @@ const storyData = {
 			<p>Her eyes meet yours with new intensity. "Do you believe in fate? This library is more than just a collection of books. It stands at the crossroads of knowledge from many worlds."</p>
 			<p>She steps toward the door, inserting the key once more. This time, when it turns, a soft blue light spills from the crack as the door swings open.</p>
 			<p>"The Archive calls to you," she says, gesturing toward the illuminated staircase that now seems less foreboding. "I can guide you, if you wish to learn its secrets. Or you can walk away—though the library rarely accepts rejection once it has chosen."</p>`,
-		background: "blackwood-with-key.jpg",
+		background: "blackwood-with-key.png",
 		choices: [
 			{ id: "accept_guidance", text: "[1.3.2.1] Accept Ms. Blackwood's guidance", next: "guided_by_blackwood" },
 			{ id: "request_explanation", text: "[1.3.2.2] Request a full explanation before proceeding", next: "blackwood_explanation" },
@@ -452,7 +452,7 @@ const storyData = {
 			<p>For the remainder of your shift, strange occurrences plague you. Books fall from shelves as you pass. Lights flicker in your peripheral vision. Twice, you hear your name whispered when no one is nearby.</p>
 			<p>When dawn finally breaks, you're exhausted and on edge. As you prepare to leave, Ms. Blackwood appears at your desk, placing a small, leather-bound book before you.</p>
 			<p>"Perhaps this will help you understand what you're experiencing," she says cryptically. "The library doesn't give up easily once it's chosen someone."</p>`,
-		background: "main-hall-night.jpg",
+		background: "main-hall-night.png",
 		choices: [
 			{ id: "take_book", text: "[1.3.3.1] Take the book and read it", next: "read_blackwood_book" },
 			{ id: "return_key", text: "[1.3.3.2] Return the key and ask for an explanation", next: "surrender_key" },
@@ -474,7 +474,7 @@ const storyData = {
 			<p>Six months later, in a ceremony attended by Guardians from other nexus points around the world, you formally accept the role of Ravencrest's new Guardian.</p>
 			<p>Your life has changed forever, but as you stand in the hidden archive, the Codex glowing before you and infinite knowledge at your fingertips, you know you've found your true calling.</p>
 			<p class="ending">THE END - You have become the new Guardian of Ravencrest Library</p>`,
-		background: "guardian-ceremony.jpg",
+		background: "guardian-ceremony.png",
 		ending: "guardian",
 		choices: [
 			{ id: "play_again", text: "Play Again", next: "start" },
@@ -493,7 +493,7 @@ const storyData = {
 			<p>She takes a seat at a nearby reading table and motions for you to join her. "Ravencrest exists at what we call a nexus point—an intersection of multiple realities. The books here aren't merely about different worlds; many of them come from those worlds."</p>
 			<p>"Fiction and non-fiction are more fluid concepts than most realize," she continues. "What's history in one world may be fantasy in another. The Codex helps us navigate these currents of knowledge and maintain the proper boundaries."</p>
 			<p>"My time as Guardian is coming to an end," she says with a hint of sadness. "And the library has chosen you as my potential successor. The question is: are you willing to learn?"</p>`,
-		background: "elara-explanation.jpg",
+		background: "elara-explanation.png",
 		choices: [
 			{ id: "express_interest", text: "[1.1.1.2.1] Express interest in learning more", next: "begin_guardian_training" },
 			{ id: "ask_for_proof", text: "[1.1.1.2.2] Ask for proof of other realities", next: "reality_demonstration" },
@@ -513,7 +513,7 @@ const storyData = {
 			<p>You make your way back up the stairs, emerging once more into the restricted section. In the days that follow, you try to resume your normal duties, but something has changed.</p>
 			<p>You notice patterns in the library you never saw before—symbols hidden in the architecture, subtle connections between seemingly unrelated texts. Sometimes books appear on your desk that you don't remember retrieving—always open to passages about choices, destinies, and hidden worlds.</p>
 			<p>And at night, you dream of the glowing book and its shifting symbols, calling you back to the archive below.</p>`,
-		background: "returning-upstairs.jpg",
+		background: "returning-upstairs.png",
 		choices: [
 			{ id: "reconsider_later", text: "[1.1.1.3.1] Reconsider your decision after two weeks", next: "accept_guardian_role" },	// return_to_archive
 			{ id: "research_library", text: "[1.1.1.3.2] Research the library's history secretly", next: "accept_guardian_role" },	// research_ravencrest
@@ -532,7 +532,7 @@ const storyData = {
 			  <p>"Some texts contain power—actual magic, scientific innovations beyond our understanding, philosophical concepts that can transform societies. In the wrong hands, such knowledge could be devastating."</p>
 			  <p>Her eyes meet yours with unexpected intensity. "For centuries, Guardians have protected this balance. I've served for nearly fifty years, but my time is ending. The library itself chooses its Guardians, and it appears to have selected you as my successor."</p>
 			  <p>She smiles at your expression of disbelief. "The brass key that led you here doesn't work for just anyone. The fact that you could use it is significant."</p>`,
-		background: "guardian-explanation.jpg",
+		background: "guardian-explanation.png",
 		choices: [
 			{ id: "ask_why_me", text: "[1.1.2.1.1] Ask why you were chosen", next: "why_chosen" },
 			{ id: "request_proof", text: "[1.1.2.1.2] Request proof of other realities", next: "reality_demonstration" },
@@ -551,7 +551,7 @@ const storyData = {
 			  <p>"Such small inconsistencies are usually manageable, but they're growing more frequent. Without intervention, the boundaries could collapse entirely, merging realities in ways that would create chaos."</p>
 			  <p>She looks at you with surprising hope in her eyes. "Each Guardian serves for a time before passing the responsibility to another. I've maintained the balance for nearly fifty years, but my connection to the nexus is weakening. The library has chosen you as my successor—the key you found responds only to those with potential to become Guardians."</p>
 			  <p>"The question is," she continues, "are you willing to learn?"</p>`,
-		background: "journal-discussion.jpg",
+		background: "journal-discussion.png",
 		choices: [
 			{ id: "ask_about_dangers", text: "[1.1.2.2.1] Ask about the dangers involved", next: "guardian_dangers" },
 			{ id: "inquire_training", text: "[1.1.2.2.2] Inquire about what training entails", next: "accept_guardian_role" },	//	training_details
@@ -570,7 +570,7 @@ const storyData = {
 			  <p>"Guardians?" you ask, your curiosity overcoming your discomfort.</p>
 			  <p>She nods. "This library exists at an intersection of multiple worlds—a nexus point where knowledge flows between realities. Some books here contain histories from worlds different from our own, sciences beyond our current understanding, even magic that functions according to different natural laws."</p>
 			  <p>"A Guardian maintains these boundaries, facilitates the safe exchange of knowledge, and prevents dangerous elements from crossing over." She smiles gently. "I've served in this role for nearly fifty years, but my time is ending. The library appears to have chosen you as my potential successor."</p>`,
-		background: "blackwood-explanation.jpg",
+		background: "blackwood-explanation.png",
 		choices: [
 			{ id: "express_disbelief", text: "[1.1.2.3.1] Express disbelief", next: "skepticism_response" },
 			{ id: "show_interest", text: "[1.1.2.3.2] Show interest in learning more", next: "initial_guardian_lesson" },
@@ -589,7 +589,7 @@ const storyData = {
 			<p>"Ravencrest is more than just a library," she explains. "It's a nexus point between realities, a place where knowledge from countless worlds converges. The Codex is our guide to these intersections."</p>
 			<p>She gently places her hand on the book, and the blue glow intensifies. "For centuries, Guardians like myself have maintained the balance, ensuring safe passage of knowledge while preventing dangerous elements from crossing over."</p>
 			<p>"But no Guardian serves forever," she says, her voice softening. "My time is ending, and the library has chosen you as my successor."</p>`,
-		background: "codex-explanation.jpg",
+		background: "codex-explanation.png",
 		choices: [
 			{ id: "accept_training", text: "Accept the offer to train as a Guardian", next: "begin_guardian_training" },
 			{ id: "request_proof", text: "Request proof of these other realities", next: "reality_demonstration" },
@@ -608,7 +608,7 @@ const storyData = {
 			<p>In the days that follow, you try to return to your normal routine, but something has changed. You notice subtle details in the library you never saw before—symbols hidden in the architecture, patterns in how the books are arranged.</p>
 			<p>Sometimes you catch Ms. Blackwood watching you with patient eyes. And at night, you dream of the glowing book and endless rows of knowledge waiting to be discovered.</p>
 			<p>The brass key remains warm in your pocket, a constant reminder of the choice you made—and the one you could still make.</p>`,
-		background: "back-to-normal.jpg",
+		background: "back-to-normal.png",
 		choices: [
 			{ id: "reconsider_later", text: "Reconsider your decision a week later", next: "reconsider_guardian" },
 			{ id: "move_on", text: "Try to move on with your life", next: "move_on_ending" },
@@ -627,7 +627,7 @@ const storyData = {
 			<p>"I only ask one thing," she continues. "Speak of this to no one. The library's deeper nature must remain hidden from those who aren't ready to understand."</p>
 			<p>She escorts you back up the spiral staircase. Before you part ways in the restricted section, she places a gentle hand on your shoulder.</p>
 			<p>"Listen to your intuition," she says. "It led you here for a reason. Whatever you decide, know that finding the key was no accident."</p>`,
-		background: "receiving-timepiece.jpg",
+		background: "receiving-timepiece.png",
 		choices: [
 			{ id: "return_three_days", text: "Return to the archive after three days", next: "return_accept_role" },
 			{ id: "research_decision", text: "Research the library's history before deciding", next: "research_before_decision" },
@@ -646,7 +646,7 @@ const storyData = {
 			<p>Your flashlight flickers momentarily, and in that brief darkness, you could swear the book's glow formed tendrils that reached toward you.</p>
 			<p>When you examine the book more closely, you see that while the text is incomprehensible, the illustrations are remarkably detailed—showing libraries, doorways, and strange landscapes that seem to move slightly when viewed from the corner of your eye.</p>
 			<p>At the bottom of the current page is a clear illustration of a brass key identical to yours, positioned above what appears to be a map of Ravencrest Library—with passages and rooms you've never seen before.</p>`,
-	  background: "glowing-book-close.jpg",
+	  background: "glowing-book-close.png",
 	  choices: [
 		{ id: "touch_book", text: "[1.2.2.1.1] Touch the glowing book", next: "accept_guardian_role" },	//	contact_ancient_tome
 		{ id: "read_aloud", text: "[1.2.2.1.2] Try to read some text aloud", next: "accept_guardian_role" },	//	recite_unknown_text
@@ -665,7 +665,7 @@ const storyData = {
 			<p>On one shelf, you discover a thin volume whose spine bears the Ravencrest family crest. Opening it reveals a journal written in elegant script, dated 1723. The first entry reads: "The nexus functions as intended. Three visitors arrived yesterday through the Eastern Passage. We have established proper protocols for their return."</p>
 			<p>Further entries mention "stabilizing the boundaries," "recalibrating the anchor points," and "cataloging artifacts from the Seventh Realm." The writer expresses concern about "thinning between worlds during the equinox."</p>
 			<p>In the margin of one page is a carefully drawn diagram of what appears to be the brass key you found, labeled "Archivist's Key – Secondary Access."</p>`,
-	  background: "archive-shelves.jpg",
+	  background: "archive-shelves.png",
 	  choices: [
 		{ id: "take_journal", text: "[1.2.2.2.1] Take the Ravencrest journal", next: "acquire_journal" },
 		{ id: "follow_catalog", text: "[1.2.2.2.2] Look for the 'Eastern Passage' mentioned in the journal", next: "search_eastern_passage" },
@@ -684,7 +684,7 @@ const storyData = {
 			<p>Near the northern door, you discover a pedestal with an open ledger. The pages contain entries in different handwritings, all dated. The most recent entry was made only three days ago: "Returned from Consultation with the Oxford Nexus. Boundary stability at 84%. Next thinning predicted in 17 days. Additional Guardians may be required."</p>
 			<p>The ceiling of the chamber draws your attention next—it's a dome painted with an intricate mural depicting a library that extends infinitely in all directions. At certain points, the library in the mural transitions into different landscapes—mountains, oceans, and cityscapes unlike any you've seen before.</p>
 			<p>In the center of the dome, directly above the glowing book, is a circular opening revealing what appears to be a night sky with unfamiliar constellations, despite the fact that you're underground.</p>`,
-	  background: "archive-chamber.jpg",
+	  background: "archive-chamber.png",
 	  choices: [
 		{ id: "inspect_eastern_door", text: "[1.2.2.3.1] Inspect the eastern door with star patterns", next: "examine_star_door" },
 		{ id: "check_visitor_ledger", text: "[1.2.2.3.2] Study the visitor ledger more closely", next: "study_ledger" },
@@ -704,7 +704,7 @@ const storyData = {
 			<p>"The brass key you found is called the Archivist's Key," she explains. "It's one of seven original keys created by Elias Ravencrest, the founder of this library. Each opens a different section of what we call the True Library."</p>
 			<p>She gestures toward the restricted section. "What looks like a simple university library above is actually just the surface level. Ravencrest is a nexus point—a place where the boundaries between realities are naturally thin. The True Library exists to monitor and maintain these boundaries, and to preserve knowledge from... various sources."</p>
 			<p>"I am the current Head Archivist," she continues. "And I've been watching you since you started working here. The library chooses its own guardians, and it appears to have chosen you. The key revealing itself to you is proof enough."</p>`,
-	  background: "blackwood-revelation.jpg",
+	  background: "blackwood-revelation.png",
 	  choices: [
 		{ id: "ask_for_more", text: "[1.2.3.1.1] Ask more about the True Library and nexus points", next: "true_library_explanation" },
 		{ id: "offer_key", text: "[1.2.3.1.2] Offer to return the key", next: "return_key_offer" },
@@ -725,7 +725,7 @@ const storyData = {
 			<p>"The brass key you found in the manuscript—" she says, making your heart skip a beat, "—it's called the Archivist's Key. It hasn't been seen since 1947. The fact that it revealed itself to you is significant."</p>
 			<p>Your attempt at denial crumbles as she continues. "Something is changing in the deeper architecture of this place. I can feel it. And now, apparently, so can you." She gestures toward the restricted section. "I was on my way to investigate the door it opens. You're welcome to join me... unless you prefer to maintain this pretense?"</p>
 			<p>Her tone carries no judgment, but her eyes reflect both amusement and genuine interest in your response.</p>`,
-	  background: "confrontation-hallway.jpg",
+	  background: "confrontation-hallway.png",
 	  choices: [
 		{ id: "admit_after_denial", text: "[1.2.3.2.1] Admit everything and apologize for lying", next: "confess_to_blackwood" },
 		{ id: "maintain_denial", text: "[1.2.3.2.2] Continue denying despite her knowledge", next: "stubborn_denial" },
@@ -746,7 +746,7 @@ const storyData = {
 			<p>At your questioning look, she elaborates, "A nexus is a location where the boundaries between realities are naturally thin. Ravencrest Library was intentionally built on such a point to study and maintain these boundaries."</p>
 			<p>You reach the door, which remains ajar as you left it. Ms. Blackwood takes a silver key from around her neck—similar to your brass one but more ornate.</p>
 			<p>"As Head Archivist, I would be honored if you would join me in exploring what the library has chosen to reveal to you," she says formally. "Few are selected by the library itself."</p>`,
-	  background: "blackwood-doorway.jpg",
+	  background: "blackwood-doorway.png",
 	  choices: [
 		{ id: "accept_invitation", text: "[1.2.3.3.1] Accept her invitation and descend together", next: "descend_with_blackwood" },
 		{ id: "ask_about_selection", text: "[1.2.3.3.2] Ask why the library might have 'selected' you", next: "chosen_one_explanation" },
@@ -766,7 +766,7 @@ const storyData = {
 			<p>She unlocks the door with her own silver key, which complements your brass one. "The library chooses its own guardians," she continues. "It revealed the key to you for a reason. Your perception and intuition make you capable of seeing beyond the veil."</p>
 			<p>The door swings open to reveal the spiral staircase descending into darkness. Ms. Blackwood produces a lantern that emits a warm, steady light.</p>
 			<p>"The True Library contains knowledge from countless realities," she says. "Some of it wondrous, some dangerous. If you choose to continue, you may be offered a place among the Archivists who protect this knowledge and maintain the boundaries between worlds. Do you still wish to proceed?"</p>`,
-	  background: "blackwood-lantern.jpg",
+	  background: "blackwood-lantern.png",
 	  choices: [
 		{ id: "descend_with_blackwood", text: "[1.3.2.1.1] Descend the stairs with Ms. Blackwood", next: "descend_with_blackwood" },
 		{ id: "ask_about_dangers", text: "[1.3.2.1.2] Ask about specific dangers you might face", next: "discuss_nexus_dangers" },
@@ -786,7 +786,7 @@ const storyData = {
 			<p>"As for the library taking notice," she says, lowering her voice, "Ravencrest is not merely a building. Through centuries of exposure to energies from multiple realities, it has developed a form of awareness. It selects potential guardians by revealing certain secrets to them—like hiding then revealing the key to you."</p>
 			<p>She looks at you intently. "For several months, I've observed your curiosity, your attention to detail, your intuition. But it was the library that chose you, not I. The door you found leads to the Archives—the heart of the True Library where we monitor boundary stability and catalog interdimensional knowledge."</p>
 			<p>"Tonight," she concludes, "the boundaries are thinner than usual. If you wish to understand your role in all this, now is the time to explore it."</p>`,
-	  background: "library-reading-nook.jpg",
+	  background: "library-reading-nook.png",
 	  choices: [
 		{ id: "accept_explanation", text: "[1.3.2.2.1] Accept her explanation and proceed to the door", next: "accept_guardian_role" },	//	proceed_to_archives
 		{ id: "question_order", text: "[1.3.2.2.2] Ask more about the Boundary Keepers order", next: "accept_guardian_role" },	//	boundary_keepers_history
@@ -806,7 +806,7 @@ const storyData = {
 			<p>As you accept the book, she adds, "Know that the library rarely makes mistakes in choosing its confidants. The fact that you found the key suggests you possess qualities needed in a guardian of knowledge."</p>
 			<p>With a respectful nod, she turns to leave. "Should you change your mind, the door will remain accessible to you through that key. But I should warn you—now that you've glimpsed beyond the veil, you may find ordinary life somewhat... changed. Knowledge, once gained, cannot be unlearned."</p>
 			<p>As you watch her disappear into the shadows of the library, you feel the weight of the key in one hand and the book in the other, symbols of a choice that seems to hang in the balance.</p>`,
-	  background: "contemplation-shadows.jpg",
+	  background: "contemplation-shadows.png",
 	  choices: [
 		{ id: "reconsider_leaving", text: "[1.3.2.3.1] Reconsider and call after Ms. Blackwood", next: "reconsider_blackwood" },
 		{ id: "examine_book", text: "[1.3.2.3.2] Examine the book before deciding", next: "examine_primer_book" },
@@ -826,7 +826,7 @@ const storyData = {
 			<p>According to the text, the "True Library" beneath Ravencrest catalogs knowledge from various realities and monitors "boundary integrity." It warns of "bleed-through" when boundaries weaken, allowing elements from other realities to enter our world—often manifesting as unusual phenomena or seemingly impossible occurrences.</p>
 			<p>The most fascinating section describes the seven Archivist's Keys, each granting access to different sections of the True Library. The brass key you possess—the Third Key—opens the path to the Observation Archives, where reality fluctuations are monitored.</p>
 			<p>As you finish reading, the text fades from the pages, replaced by a map showing the location of several hidden entrances throughout the library—including the one you discovered in the restricted section.</p>`,
-	  background: "glowing-book-pages.jpg",
+	  background: "glowing-book-pages.png",
 	  choices: [
 		{ id: "ask_more_questions", text: "[1.3.3.1.1] Ask Ms. Blackwood more questions about the Primer", next: "primer_questions" },
 		{ id: "declare_readiness", text: "[1.3.3.1.2] Tell her you're ready to see the True Library", next: "ready_for_archives" },
@@ -846,7 +846,7 @@ const storyData = {
 			<p>She looks at you with new intensity. "Tonight, the boundaries are particularly thin—a cyclical occurrence that happens roughly every seventy years. The library becomes more... alive during these periods. More likely to reveal its secrets to those it deems worthy."</p>
 			<p>"As for why you," she concludes, "the library has its own ways of judging character. It must have sensed in you the qualities needed in a guardian of knowledge—curiosity balanced with caution, intelligence with integrity."</p>
 			<p>She stands. "The choice is yours. You may keep the key but never use it, return to your ordinary life, and eventually convince yourself this was all imagination. Or you may use it to access the True Library and perhaps join the lineage of Archivists who have protected this nexus for centuries."</p>`,
-	  background: "blackwood-conversation.jpg",
+	  background: "blackwood-conversation.png",
 	  choices: [
 		{ id: "keep_key_use", text: "[1.3.3.2.1] Keep the key and use it to access the True Library", next: "use_key_immediately" },
 		{ id: "keep_key_wait", text: "[1.3.3.2.2] Keep the key but wait until you're more prepared", next: "delay_key_use" },
@@ -867,7 +867,7 @@ const storyData = {
 			<p>You wake with a start at dawn, sunlight streaming through your window. For a moment, you wonder if last night's events were just a nightmare—until you feel something hard beneath your pillow.</p>         
 			<p>The brass key gleams in the morning light, and beside it lies the small leather book Ms. Blackwood had offered you. A bookmark protrudes from its pages, and when you open it, the text seems to shift before settling into clarity: "Chapter One: The Chosen Librarians."</p>         
 			<p>Your phone buzzes with a text message from an unknown number: "The library opens at dusk for those who hold the key. We await your return."</p>`,
-		background: "apartment-morning.jpg",
+		background: "apartment-morning.png",
 		choices: [
 			{ id: "read_found_book", text: "[1.3.3.3.1] Read the mysterious book", next: "morning_reading" },
 			{ id: "return_to_library", text: "[1.3.3.3.2] Return to the library immediately", next: "daytime_library_visit" },
@@ -888,7 +888,7 @@ const storyData = {
 		  <p>"The brass key revealing itself to you was merely the culmination of a connection that's been building for months. The library has been testing you, observing how you handle knowledge, how you treat the books in your care."</p>
 		  <p>She leans forward slightly. "Not everyone can see the key for what it is, even when it's right in front of them. And among those who can see it, not everyone can use it. The fact that it worked for you is significant."</p>
 		  <p>"The question now," she says, her voice gentle but serious, "is whether you're willing to accept this responsibility, or if you wish to walk away. Both choices are valid, but once made, they set you on very different paths."</p>`,
-	  background: "guardian-selection.jpg",
+	  background: "guardian-selection.png",
 	  choices: [
 		{ id: "accept_responsibility", text: "[1.1.2.1.1.1] Accept the responsibility", next: "begin_guardian_training" },
 		{ id: "ask_time_consider", text: "[1.1.2.1.1.2] Ask for time to consider", next: "time_to_consider" },
@@ -913,7 +913,7 @@ const storyData = {
 		  <p>The compass needle shifts constantly between the points labeled N, S, E, W, F, and P—the last two, she explains, standing for "Future" and "Past."</p>
 		  <p>"And finally," she says, offering you the fountain pen, "from a world where colors we cannot perceive exist. Write something."</p>
 		  <p>When you do, the ink shifts through normal colors but also seems to contain hues that your eyes can't quite process—colors that should be impossible but somehow exist on the page.</p>`,
-	  background: "reality-artifacts.jpg",
+	  background: "reality-artifacts.png",
 	  choices: [
 		{ id: "convinced_by_proof", text: "[1.1.1.2.2.1] Express that you're convinced", next: "accept_after_proof" },
 		{ id: "scientific_inquiry", text: "[1.1.1.2.2.2] Ask for scientific explanations", next: "scientific_discussion" },
@@ -985,7 +985,7 @@ const storyData = {
 			<p>Over the following months, you train with the Council, learning to navigate between worlds through literary gateways, to recognize visitors from other realities, and to protect the delicate balance between realms of possibility.</p>
 			<p>Six months later, in a formal ceremony beneath Ravencrest, you are inducted as a full Guardian, entrusted with your own nexus to protect—a small but significant library in your hometown that, you now realize, always felt somehow magical to you as a child.</p>
 			<p class="ending">THE END - Guardian of the Hometown Nexus</p>`,
-		background: "guardian-council.jpg",
+		background: "guardian-council.png",
 		ending: "council",
 		choices: [
 			{ id: "play_again", text: "Play Again", next: "start" },
@@ -1006,7 +1006,7 @@ const storyData = {
 			<p>Over the following weeks, you catch occasional glimpses of familiar faces from the library appearing in strange places—reflections in windows, between bookshelves, watching you from across the street. Your dreams fill with whispers and the soft blue glow you glimpsed beneath the library.</p>     
 			<p>One month later, you receive an envelope containing your resignation letter—in your handwriting, though you never wrote it—and a note: "Some doors, once discovered, cannot be closed again. We'll be waiting when you're ready."</p>     
 			<p>You try to forget the library and its secrets, but sometimes at night, you still hear those whispers calling your name.</p>`,
-		background: "library-exterior-night.jpg",
+		background: "library-exterior-night.png",
 		ending: "THE UNINITIATED: You glimpsed a world beyond your understanding but chose safety over revelation. The library's secrets remain just beyond your reach, waiting for the day you find the courage to return.",
 		choices: [
 			{ id: "restart", text: "Play Again", next: "start" },
@@ -1025,7 +1025,7 @@ const storyData = {
 			<p>One week after your flight from the library, you discover your brass key is missing. The next morning, you find it on your nightstand beside a small, leather-bound book that wasn't there before. Its pages are blank except for a single line on the first page: "The Archive acknowledges your selection. Denial will not change your path."</p>     
 			<p>Strange incidents multiply. Your computer screen flickers with text in languages you don't recognize. Colleagues mention conversations with you that never happened. Twice, you wake to find yourself standing outside the library at dawn with no memory of having left your bed.</p>     
 			<p>Finally, after a month of escalating phenomena, you return to the library after hours. The door is unlocked. Ms. Blackwood waits inside, unsurprised by your arrival.</p>     <p>"The library always reclaims its chosen," she says simply, holding out her hand. "Shall we begin again?"</p>`,
-		background: "library-return-night.jpg",
+		background: "library-return-night.png",
 		ending: "THE RELUCTANT KEEPER: You tried to escape your destiny, but some callings cannot be outrun. The library's magic pursued you until you had no choice but to accept your role in its ancient purpose.",
 		choices: [
 			{ id: "restart", text: "Play Again", next: "start" },
@@ -1060,7 +1060,7 @@ const storyData = {
 			</div>
 			
 			<p class="credits-footer">© 2023 Your Name Here - All Rights Reserved</p>`,
-		background: "credits-background.jpg",
+		background: "credits-background.png",
 		choices: [
 			{ id: "play_again", text: "Play Again", next: "start" },
 			{ id: "main_menu", text: "Main Menu", next: "main_menu" }
@@ -1083,7 +1083,7 @@ const storyData = {
 		  <p>You learn to read the Codex's shifting text, to sense disturbances in the library's delicate ecosystem, and to use the key to access hidden sections that exist partially in other realities.</p>
 		  <p>Three months later, in a private ceremony attended by Guardians from other nexus points around the world, you formally accept the title of Guardian-in-Training. As Eleanor places a pendant around your neck—a smaller version of the brass key that started your journey—you know with absolute certainty that you've found your true calling.</p>
 		  <p class="ending">THE END - You have begun your journey as a Guardian-in-Training</p>`,
-	  background: "guardian-training.jpg",
+	  background: "guardian-training.png",
 	  ending: "guardian_training",
 	  choices: [
 		{ id: "play_again", text: "Play Again", next: "start" },
@@ -1102,7 +1102,7 @@ const storyData = {
 		  <p>"The library has chosen you, but the final choice must be yours," she replies. "Take the time you need, but know that the boundaries continue to thin. I cannot maintain them indefinitely."</p>
 		  <p>In the days that follow, you return to your regular duties, but everything feels different. Books sometimes seem to glow faintly with an inner light. You notice symbols hidden in the library's architecture that you've somehow never seen before. Occasionally, you catch glimpses of impossible things in your peripheral vision—shelves that shouldn't exist, patrons in strange attire who vanish when you look directly at them.</p>
 		  <p>After two weeks of consideration, dreams, and increasingly strange experiences, you find yourself standing before the door in the restricted section, pendant in hand, having made your decision.</p>`,
-	  background: "time-to-consider.jpg",
+	  background: "time-to-consider.png",
 	  choices: [
 		{ id: "return_accept", text: "[1.1.2.1.1.2.1] Return to the archive and accept the role", next: "delayed_acceptance" },
 		{ id: "return_decline", text: "[1.1.2.1.1.2.2] Return to the archive and decline the role", next: "informed_decline" },
@@ -1126,7 +1126,7 @@ const storyData = {
 		  <p>Six months later, Eleanor presents you to the Council of Guardians—representatives from nexus points around the world. After a series of tests and questions, they formally recognize you as a Guardian-in-Training.</p>
 		  <p>As you stand in the hidden archive, the Codex's blue light illuminating your face and your mentor smiling proudly beside you, you know that while your old life is behind you, an extraordinary one has just begun.</p>
 		  <p class="ending">THE END - You have become a recognized Guardian-in-Training</p>`,
-	  background: "acceptance-ceremony.jpg",
+	  background: "acceptance-ceremony.png",
 	  ending: "delayed_guardian",
 	  choices: [
 		{ id: "play_again", text: "Play Again", next: "start" },
@@ -1150,7 +1150,7 @@ const storyData = {
 		  <p>Over time, you develop expertise in identifying literary works that have crossed boundaries, noticing subtle differences that reveal their otherworldly origins. Your unique perspective proves valuable, and you find fulfillment in your dual role—serving both the public library and its secret heart.</p>
 		  <p>When, two years later, a new Guardian is found, you help with their training, sharing insights from someone who walks between both worlds.</p>
 		  <p class="ending">THE END - You have become an Archivist of Cross-Reality Literature</p>`,
-	  background: "archivist-role.jpg",
+	  background: "archivist-role.png",
 	  ending: "archivist",
 	  choices: [
 		{ id: "play_again", text: "Play Again", next: "start" },
@@ -1171,7 +1171,7 @@ const storyData = {
 		  <p>Yet on certain nights, when you're alone among the stacks of your new library, you sometimes catch yourself listening for whispers between the shelves, or examining the spines of books more carefully than necessary, wondering if perhaps, just perhaps, some of them might contain stories from other worlds.</p>
 		  <p>And sometimes, in your dreams, you return to the spiral staircase and the archive below, where the Codex still glows with its blue light, waiting for someone else to read its secrets.</p>
 		  <p class="ending">THE END - You chose an ordinary life, but the memory remains</p>`,
-	  background: "ordinary-life.jpg",
+	  background: "ordinary-life.png",
 	  ending: "normal_life",
 	  choices: [
 		{ id: "play_again", text: "Play Again", next: "start" },
@@ -1193,7 +1193,7 @@ const storyData = {
 		  <p>One night, three months later, you're shelving books in the mythology section when you notice a volume that seems to glow faintly. Opening it reveals a detailed account of a pantheon you've never heard of, from a world where divine beings still walk among mortals.</p>
 		  <p>You hesitate, then carefully place the book in your bag. Perhaps you aren't meant to be a Guardian, but you can still appreciate the windows into other worlds that occasionally appear. Over time, you amass a small private collection of these boundary-crossing texts, becoming an unofficial custodian of stories from elsewhere.</p>
 		  <p class="ending">THE END - You became a Collector of Cross-Reality Literature</p>`,
-	  background: "collector-ending.jpg",
+	  background: "collector-ending.png",
 	  ending: "collector",
 	  choices: [
 		{ id: "play_again", text: "Play Again", next: "start" },
@@ -1218,7 +1218,7 @@ const storyData = {
 		  <p>Over the months that follow, you learn to sense disturbances in the boundaries between worlds, to use the brass key to access hidden chambers of the library that exist partially in other realities, and to interpret the shifting text of the Codex.</p>
 		  <p>A year later, in a ceremony attended by Guardians from other nexus points, you are formally recognized as Guardian-Apparent of Ravencrest Library—second only to Eleanor herself, and prepared to assume full guardianship when her time comes.</p>
 		  <p class="ending">THE END - You have become Guardian-Apparent of Ravencrest</p>`,
-	  background: "guardian-apparent.jpg",
+	  background: "guardian-apparent.png",
 	  ending: "guardian_apparent",
 	  choices: [
 		{ id: "play_again", text: "Play Again", next: "start" },
@@ -1243,7 +1243,7 @@ const storyData = {
 		  <p>Over the months that follow, you divide your time between your regular duties and intensive study under Ms. Blackwood's guidance. Your scientific background proves valuable as you learn to navigate the complex interactions between different universal constants.</p>
 		  <p>A year later, you publish your first paper in the secret Journal of Cross-Reality Physics—a publication shared only among Guardians and trusted scientists aware of the multiverse. Your unique approach to reconciling quantum mechanics across reality barriers earns recognition from peers you never knew existed.</p>
 		  <p class="ending">THE END - You have become a Cross-Reality Theoretical Physicist</p>`,
-	  background: "cross-reality-physics.jpg",
+	  background: "cross-reality-physics.png",
 	  ending: "physicist",
 	  choices: [
 		{ id: "play_again", text: "Play Again", next: "start" },
@@ -1269,7 +1269,7 @@ const storyData = {
 		  <p>Two years later, your expertise in cataloging and authenticating artifacts from literary realities is unmatched. When Guardians from other nexus points discover texts of uncertain origin, they send them to you for analysis.</p>
 		  <p>Your life has found a perfect balance—ordinary librarian by day, expert in cross-reality artifacts by night. And though you never became a full Guardian, your specialized knowledge makes you an invaluable part of the multiverse network.</p>
 		  <p class="ending">THE END - You have become the Curator of Cross-Reality Literary Artifacts</p>`,
-	  background: "artifact-repository.jpg",
+	  background: "artifact-repository.png",
 	  ending: "curator",
 	  choices: [
 		{ id: "play_again", text: "Play Again", next: "start" },
@@ -1287,7 +1287,7 @@ const storyData = {
 			  <p>Hesitantly, you step forward and peer at the open pages. The symbols shift and transform before your eyes, arranging themselves into words you can understand. The text describes a version of Earth where the Industrial Revolution never happened, where society developed along entirely different technological lines.</p>
 			  <p>As you continue reading, the words change again, showing you glimpses of other worlds—some similar to our own, others wildly different. The experience is both disorienting and fascinating.</p>
 			  <p>"This is...incredible," you admit, looking up at Ms. Blackwood. "But how do I know this isn't some advanced technology? Or even a hallucination?"</p>`,
-		background: "skeptic-at-codex.jpg",
+		background: "skeptic-at-codex.png",
 		choices: [
 			{ id: "request_proof", text: "[1.1.2.3.1.1] Request more tangible proof", next: "tangible_evidence" },
 			{ id: "reluctant_interest", text: "[1.1.2.3.1.2] Express reluctant interest in learning more", next: "gradually_convinced" },
@@ -1309,7 +1309,7 @@ const storyData = {
 			  <p>Immediately, a soft wind brushes against your skin, bringing with it the unmistakable salt tang of the sea, despite being underground.</p>
 			  <p>Your mind races for explanations—hidden fans, scent dispensers—but Ms. Blackwood seems to read your thoughts.</p>
 			  <p>"You're welcome to examine everything," she says. "Search for hidden mechanisms. Test and verify to your satisfaction."</p>`,
-		background: "reality-artifacts.jpg",
+		background: "reality-artifacts.png",
 		choices: [
 			{ id: "examine_artifacts", text: "[1.1.2.3.1.1.1] Carefully examine the artifacts", next: "artifact_examination" },
 			{ id: "test_journal", text: "[1.1.2.3.1.1.2] Test the journal yourself", next: "journal_test" },
@@ -1330,7 +1330,7 @@ const storyData = {
 			  <p>"I can't explain these," you admit. "They defy conventional physics and engineering."</p>
 			  <p>She nods. "Because they originate from places where physical laws differ from our own. This is the tangible evidence you requested."</p>
 			  <p>"What does all this have to do with me?" you ask, finally beginning to accept the extraordinary implications.</p>`,
-		background: "examining-artifacts.jpg",
+		background: "examining-artifacts.png",
 		choices: [
 			{ id: "accept_real", text: "[1.1.2.3.1.1.1.1] Accept that the artifacts are real", next: "accept_reality" },
 			{ id: "ask_guardian_role", text: "[1.1.2.3.1.1.1.2] Ask about the Guardian role", next: "guardian_duty_explanation" },
@@ -1349,7 +1349,7 @@ const storyData = {
 			  <p>"What happens now?" you ask.</p>
 			  <p>"Now begins your training—if you choose to accept it," she says. "I've been Guardian of Ravencrest for nearly fifty years, but my connection to the nexus is weakening. I need to pass on my knowledge and responsibilities while I still can."</p>
 			  <p>She looks at you with hopeful eyes. "The choice must be yours freely made. Being a Guardian means a life of service, of secrets, but also of wonders beyond imagination."</p>`,
-		background: "decision-moment.jpg",
+		background: "decision-moment.png",
 		choices: [
 			{ id: "become_apprentice", text: "[1.1.2.3.1.1.1.1.1] Accept the role as Guardian apprentice", next: "apprentice_beginning" },
 			{ id: "request_consideration", text: "[1.1.2.3.1.1.1.1.2] Ask for time to consider", next: "consideration_period" },
@@ -1370,7 +1370,7 @@ const storyData = {
 			  <p>Six months later, during a private ceremony attended by Guardians from other nexus points around the world, you formally accept the mantle of Ravencrest's next Guardian.</p>
 			  <p>Your ordinary life has transformed into something extraordinary—a life of wonder, responsibility, and incredible purpose.</p>
 			  <p class="ending">THE END - You have become the new Guardian of Ravencrest Library</p>`,
-		background: "guardian-ceremony.jpg",
+		background: "guardian-ceremony.png",
 		ending: "guardian",
 		choices: [
 			{ id: "play_again", text: "Play Again", next: "start" },
@@ -1390,7 +1390,7 @@ const storyData = {
 			  <p>"Listen to your intuition," she says. "It led you here for a reason."</p>
 			  <p>The following weeks are strange ones. You continue your work as night librarian, but everything feels different. You notice patterns in the library you never saw before—symbols hidden in the architecture, connections between seemingly unrelated books, the subtle ways certain volumes seem to change their contents when no one is looking.</p>
 			  <p>The pocket watch remains warm in your pocket, a constant reminder of the choice awaiting you.</p>`,
-		background: "contemplation-period.jpg",
+		background: "contemplation-period.png",
 		choices: [
 			{ id: "accept_after_time", text: "[1.1.1.2.3.1.1.1.2.1] Return and accept the role after two weeks", next: "delayed_acceptance" },
 			{ id: "research_more", text: "[1.1.1.2.3.1.1.1.2.2] Research the library's history before deciding", next: "historical_research" },
@@ -1416,7 +1416,7 @@ const storyData = {
 			  <p>One year later, during a ceremony attended by Guardians from other nexus points around the world, you formally accept the mantle of Ravencrest's next Guardian.</p>
 			  <p>Your ordinary life has transformed into one of extraordinary purpose and wonder.</p>
 			  <p class="ending">THE END - You have become the new Guardian of Ravencrest Library</p>`,
-		background: "formal-guardian-ceremony.jpg",
+		background: "formal-guardian-ceremony.png",
 		ending: "guardian",
 		choices: [
 			{ id: "play_again", text: "Play Again", next: "start" },
@@ -1437,7 +1437,7 @@ const storyData = {
 			  <p>"I've been researching," you tell her. "I found mention of a Ms. Hargrove from 1873."</p>
 			  <p>Ms. Blackwood smiles. "Margaret Hargrove was my predecessor's predecessor. Her portrait is just down that row, if you'd like to see it."</p>
 			  <p>"I've made my decision," you continue. "I want to learn. I want to become a Guardian."</p>`,
-		background: "historical-research.jpg",
+		background: "historical-research.png",
 		choices: [
 			{ id: "begin_formal_training", text: "[1.1.1.2.3.1.1.1.2.2.1] Begin your formal Guardian training", next: "formal_training_begins" },
 			{ id: "ask_past_guardians", text: "[1.1.1.2.3.1.1.1.2.2.2] Ask about past Guardians first", next: "accept_guardian_role" }	//	guardian_history
@@ -1458,7 +1458,7 @@ const storyData = {
 			  <p>One year later, during a formal ceremony in the archive attended by five other Guardians, you take the oath that officially makes you the next Guardian of Ravencrest Library.</p>
 			  <p>Eleanor will stay on as your advisor for a few more years, but the primary responsibility now rests with you—a responsibility you embrace with both humility and pride.</p>
 			  <p class="ending">THE END - You have become the new Guardian of Ravencrest Library</p>`,
-		background: "guardian-training.jpg",
+		background: "guardian-training.png",
 		ending: "guardian",
 		choices: [
 			{ id: "play_again", text: "Play Again", next: "start" },
@@ -1478,7 +1478,7 @@ const storyData = {
 			  <p>After a moment's consideration, she continues. "There is a role you might consider—not as Guardian, but as Keeper of Records. You would maintain your regular position, but also help preserve the library's secret history, without the broader responsibilities of maintaining the nexus."</p>
 			  <p>"Many Guardians have had assistants who share their secrets but not their full burden," she explains. "You've shown integrity in your decision, and your research skills would be valuable to me in my remaining years as Guardian."</p>
 			  <p>She offers you a different proposition—to work as her assistant, learning the library's secrets while documenting its history, but without the full responsibilities of maintaining the boundaries between worlds.</p>`,
-		background: "alternative-role.jpg",
+		background: "alternative-role.png",
 		choices: [
 			{ id: "accept_keeper", text: "[1.1.1.2.3.1.1.1.2.3.1] Accept the role of Keeper of Records", next: "become_keeper" },
 			{ id: "decline_entirely", text: "[1.1.1.2.3.1.1.1.2.3.2] Decline any involvement with the archive", next: "complete_separation" }
@@ -1497,7 +1497,7 @@ const storyData = {
 			  <p>You develop a comprehensive system for cataloging books and artifacts from different realities, making the archive more accessible and organized than it has been in centuries.</p>
 			  <p>While Ms. Blackwood continues her search for a new Guardian, you find profound satisfaction in your role. You may not maintain the boundaries between worlds, but you preserve the knowledge of those who do—a contribution that will benefit Guardians for generations to come.</p>
 			  <p class="ending">THE END - You have become the Keeper of Records for Ravencrest Library</p>`,
-		background: "keeper-of-records.jpg",
+		background: "keeper-of-records.png",
 		ending: "keeper",
 		choices: [
 			{ id: "play_again", text: "Play Again", next: "start" },
@@ -1521,7 +1521,7 @@ const storyData = {
 			  <p>In the months that follow, you return to your normal routine. Sometimes, you catch Ms. Blackwood watching you with a wistful expression. Occasionally, books appear on your desk that you don't remember retrieving—always fascinating volumes that seem perfectly suited to your current interests.</p>
 			  <p>The silver bookmark proves to be remarkably effective—helping you locate obscure references and perfect quotes with uncanny precision. It's your only tangible reminder of the hidden world beneath the library—a world you chose to walk away from, but which has left an indelible mark on how you see the ordinary one.</p>
 			  <p class="ending">THE END - You returned to ordinary life with extraordinary knowledge</p>`,
-		background: "return-to-ordinary.jpg",
+		background: "return-to-ordinary.png",
 		ending: "ordinary",
 		choices: [
 			{ id: "play_again", text: "Play Again", next: "start" },
@@ -1540,7 +1540,7 @@ const storyData = {
 			 <p>"And this," she says, selecting another book, "is a scientific journal from a world where electricity was never discovered, but crystalline technologies developed instead."</p>
 			 <p>The diagrams and formulas in this text are unlike anything you've seen in scientific literature, yet they have an internal consistency that would be difficult to fabricate.</p>
 			 <p>"I could show you countless examples," Elara says, "but perhaps the most convincing evidence is something you've already experienced." She gestures toward the Codex. "The fact that you can read its changing text marks you as someone with the potential to perceive multiple realities."</p>`,
-	  background: "skeptic-demonstration.jpg",
+	  background: "skeptic-demonstration.png",
 	  choices: [
 		{ id: "request_more_proof", text: "[1.1.1.2.3.1] Request more concrete proof", next: "concrete_proof" },
 		{ id: "consider_possibility", text: "[1.1.1.2.3.2] Consider the possibility it might be true", next: "accept_guardian_role" },	//	partial_acceptance
@@ -1559,7 +1559,7 @@ const storyData = {
 			 <p>She touches the mirror's frame and speaks a few words in a language you don't recognize. The rippling surface clears, revealing what appears to be a library—similar to Ravencrest's main reading room, but subtly different. The architecture has an Art Nouveau influence absent in your world, and the patrons are dressed in clothing that combines Victorian and futuristic elements.</p>
 			 <p>"This is Ravencrest as it exists in world E-379," Elara says. "One of the many parallel libraries connected to our nexus point."</p>
 			 <p>As you watch, a librarian in that world glances toward the mirror and nods in recognition, giving a small wave before continuing her work.</p>`,
-	  background: "threshold-mirror.jpg",
+	  background: "threshold-mirror.png",
 	  choices: [
 		{ id: "test_mirror", text: "[1.1.1.2.3.1.1] Ask to test the mirror yourself", next: "mirror_test" },
 		{ id: "acknowledge_evidence", text: "[1.1.1.2.3.1.2] Acknowledge this as compelling evidence", next: "accept_guardian_role" },	//	evidence_acceptance
@@ -1581,7 +1581,7 @@ const storyData = {
 			 <p>"Each decision we make creates divergences," Elara says quietly. "Somewhere, versions of us made different choices, leading to different lives. The boundaries between these realities are what Guardians maintain."</p>
 			 <p>You remove your hand from the frame, and the mirror gradually returns to its rippling, undefined state.</p>
 			 <p>"I... I believe you," you say finally. "Or at least, I'm willing to consider that what you're saying might be true."</p>`,
-	  background: "using-mirror.jpg",
+	  background: "using-mirror.png",
 	  choices: [
 		{ id: "ask_about_training", text: "[1.1.1.2.3.1.1.1] Ask what Guardian training involves", next: "training_overview" },
 		{ id: "need_time", text: "[1.1.1.2.3.1.1.2] Ask for time to process everything", next: "accept_guardian_role" },	//	time_granted
@@ -1601,7 +1601,7 @@ const storyData = {
 			 <p>"Finally, you'll develop your Guardian intuition—the ability to sense disturbances in the boundaries and address them before they become problematic."</p>
 			 <p>She closes the book and looks at you intently. "The full training typically takes three years, though you would assume some responsibilities earlier. It's demanding work, but deeply rewarding."</p>
 			 <p>She adds gently, "And before you ask—yes, you could still maintain aspects of your normal life during training. Previous trainees have balanced their studies with outside careers and relationships. The library adapts to its Guardians' needs."</p>`,
-	  background: "training-manual.jpg",
+	  background: "training-manual.png",
 	  choices: [
 		{ id: "ask_about_dangers", text: "[1.1.1.2.3.1.1.1.1] Ask about potential dangers", next: "guardian_dangers" },
 		{ id: "request_time", text: "[1.1.1.2.3.1.1.1.2] Request time to consider the offer", next: "consideration_period" },
@@ -1622,7 +1622,7 @@ const storyData = {
 			 <p>Her voice softens. "I won't mislead you—three Guardians in Ravencrest's history died protecting the boundaries. Others suffered injuries or lasting effects from their work."</p>
 			 <p>She turns to face you directly. "But we take every precaution, and the training prepares you thoroughly. No Guardian works alone—we have a network across multiple realities providing support and assistance."</p>
 			 <p>"The risks are real," she concludes, "but they're manageable with proper preparation. And the importance of our work cannot be overstated."</p>`,
-	  background: "damaged-artifacts.jpg",
+	  background: "damaged-artifacts.png",
 	  choices: [
 		{ id: "too_dangerous", text: "[1.1.1.2.3.1.1.1.1.1] Decide it's too dangerous", next: "decline_politely" },
 		{ id: "brave_decision", text: "[1.1.1.2.3.1.1.1.1.2] Make a brave decision to continue", next: "accept_guardian_role" },	//	courageous_choice
@@ -1641,7 +1641,7 @@ const storyData = {
 			 <p>You climb the spiral staircase back to the main library, your mind whirling with everything you've learned. Over the following weeks, you try to return to your normal routine, but Elara was right—you notice things now. Patrons who visit the library yet interact with no one, books that weren't in the catalog yesterday, whispered conversations in languages that sound like no earthly tongue.</p>
 			 <p>One evening, you spot a young woman desperately trying to return a book that appears to be slowly dissolving at the edges. When she leaves, you examine it and find pages describing your own life with alarming accuracy—including your recent discovery of the archive.</p>
 			 <p>That night, standing in your apartment, you look at the silver pendant Elara gave you and wonder if you made the right choice.</p>`,
-	  background: "contemplating-pendant.jpg",
+	  background: "contemplating-pendant.png",
 	  choices: [
 		{ id: "remain_uninvolved", text: "[1.1.1.2.3.1.1.1.1.1.1] Remain uninvolved despite your knowledge", next: "normal_life_ending" },
 		{ id: "contact_elara", text: "[1.1.1.2.3.1.1.1.1.1.2] Contact Elara about the dissolving book", next: "return_to_guardian_path" },
@@ -1664,7 +1664,7 @@ const storyData = {
 			 <p>You never fully embrace the Guardian path, but neither do you fully reject it. You carve out a unique role for yourself—a friend to the Guardians, a protector of your small corner of Ravencrest, and a keeper of secrets most people will never know exist.</p>
 			 <p>It's not the life of grand adventure that might have been yours, but it has its own quiet satisfaction. And the silver pendant remains in your drawer, unused but never forgotten.</p>
 			 <p class="ending">THE END - The Friend of Guardians</p>`,
-	  background: "casual-guardian.jpg",
+	  background: "casual-guardian.png",
 	  ending: "friend_of_guardians",
 	  choices: [
 		{ id: "play_again", text: "Play Again", next: "start" },
@@ -1686,7 +1686,7 @@ const storyData = {
 			 <p>When the book is stabilized, she looks at you thoughtfully. "I respect your decision to decline Guardian training. But perhaps there's a middle path—a limited apprenticeship focused on defensive techniques and basic boundary maintenance."</p>
 			 <p>"You wouldn't need to commit to becoming a full Guardian," she continues. "But you would have the knowledge to protect yourself and others from phenomena like this."</p>
 			 <p>Her offer is tempting. It would allow you to explore this new reality while maintaining some distance from its greatest dangers.</p>`,
-	  background: "examining-echo-book.jpg",
+	  background: "examining-echo-book.png",
 	  choices: [
 		{ id: "accept_limited", text: "[1.1.1.2.3.1.1.1.1.1.2.1] Accept limited apprenticeship", next: "limited_guardian" },
 		{ id: "full_commitment", text: "[1.1.1.2.3.1.1.1.1.1.2.2] Commit to full Guardian training instead", next: "full_guardian_training" },
@@ -1707,7 +1707,7 @@ const storyData = {
 			 <p>Years pass, and you advance in both your public career and your secret work. Eventually, you become the library's director, using your position to subtly protect Ravencrest's special nature while continuing your part-time Guardian duties.</p>
 			 <p>It's an unusual path—neither fully embracing nor rejecting the Guardian legacy—but it's one uniquely suited to your strengths and boundaries. You've found balance between extraordinary knowledge and ordinary life.</p>
 			 <p class="ending">THE END - The Guardian Specialist</p>`,
-	  background: "limited-training.jpg",
+	  background: "limited-training.png",
 	  ending: "specialist",
 	  choices: [
 		{ id: "play_again", text: "Play Again", next: "start" },
@@ -1728,7 +1728,7 @@ const storyData = {
 			 <p>Three years later, when Elara announces her retirement, she formally nominates you as her successor. In a ceremony attended by Guardians from seventeen realities, you accept the full responsibilities and title of Guardian of Ravencrest.</p>
 			 <p>Your initial fears have transformed into confidence, your skepticism into wonder at the multiverse you now help protect.</p>
 			 <p class="ending">THE END - The Reluctant Guardian</p>`,
-	  background: "full-guardian-ceremony.jpg",
+	  background: "full-guardian-ceremony.png",
 	  ending: "reluctant_guardian",
 	  choices: [
 		{ id: "play_again", text: "Play Again", next: "start" },
@@ -1749,7 +1749,7 @@ const storyData = {
 			 <p>As years pass, you become known in Guardian circles as "The Librarian"—an informal but respected ally who maintains a foot in both worlds. You never learn the deepest secrets of the archive or master advanced techniques, but your unique perspective and public position make you an essential part of Ravencrest's protection.</p>
 			 <p>When Elara eventually retires, her replacement—a Guardian from the Eastern nexus—continues your arrangement, acknowledging that some insights can only come from someone who hasn't fully crossed the threshold between ordinary and extraordinary.</p>
 			 <p class="ending">THE END - The Sentinel Librarian</p>`,
-	  background: "sentinel-librarian.jpg",
+	  background: "sentinel-librarian.png",
 	  ending: "sentinel",
 	  choices: [
 		{ id: "play_again", text: "Play Again", next: "start" },
@@ -1775,7 +1775,7 @@ const storyData = {
 			<p>Six months later, in a ceremony attended by Guardians from other nexus points around the world, you formally accept the role of Ravencrest's new Guardian.</p>
 			<p>Your life has changed forever, but as you stand in the hidden archive, the Codex glowing before you and infinite knowledge at your fingertips, you know you've found your true calling.</p>
 			<p class="ending">THE END - You have become the new Guardian of Ravencrest Library</p>`,
-		background: "guardian-ceremony.jpg",
+		background: "guardian-ceremony.png",
 		ending: "guardian",
 		choices: [
 		  { id: "play_again", text: "Play Again", next: "start" },
@@ -1810,7 +1810,7 @@ const storyData = {
 			<p class="credits-name">Mystery Enthusiasts</p>
 			
 			<p class="credits-footer">Thank you for playing!</p>`,
-	  background: "credits-background.jpg",
+	  background: "credits-background.png",
 	  choices: [
 		{ id: "play_again_from_credits", text: "Play Again", next: "start" },
 		{ id: "main_menu", text: "Main Menu", next: "main_menu" }
@@ -1823,7 +1823,7 @@ const storyData = {
 			<p class="menu-title">The Librarian's Secret</p>
 			<p class="menu-subtitle">A Digital Choose-Your-Path Mystery</p>
 			<p class="menu-description">Uncover the mysteries of Ravencrest Library, where books are merely the beginning...</p>`,
-	  background: "main-menu-background.jpg",
+	  background: "main-menu-background.png",
 	  choices: [
 		{ id: "start_new_game", text: "Begin Your Journey", next: "start" },
 		{ id: "about_game", text: "About This Game", next: "about" }
@@ -1845,7 +1845,7 @@ const storyData = {
 			  <li>Atmospheric visuals and sound design</li>
 			</ul>
 			<p>Begin your adventure and discover what lies beyond the bookshelves of Ravencrest Library!</p>`,
-	  background: "about-background.jpg",
+	  background: "about-background.png",
 	  choices: [
 		{ id: "return_to_menu", text: "Return to Menu", next: "main_menu" }
 	  ]
