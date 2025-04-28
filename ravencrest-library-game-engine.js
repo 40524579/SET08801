@@ -435,7 +435,7 @@ class GameEngine
 			if (currentNode.background) 
 			{
 				// using images
-				this.mainContent.style.backgroundImage = `url('/images/${currentNode.background}')`;
+				this.mainContent.style.backgroundImage = `url('images/${currentNode.background}')`;
 			}
 		  
 			// Fade in the text
